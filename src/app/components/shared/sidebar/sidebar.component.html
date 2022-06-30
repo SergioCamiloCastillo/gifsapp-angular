@@ -2,6 +2,6 @@
   <h3 class="text-light">GifApps</h3>
   <hr class="text-white" />
   <div *ngFor="let item of historial" class="list-group list-reset">
-    <a href="#" class="list-group-item list-group-item-action">{{item | titlecase}}</a>
+    <a href="#" (click)="buscar(item)" class="list-group-item list-group-item-action">{{item | titlecase}}</a>
   </div>
 </div>
